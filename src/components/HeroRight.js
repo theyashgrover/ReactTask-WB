@@ -3,7 +3,8 @@ import MeetInfo from './MeetInfo'
 
 const HeroRight = () => {
   return (
-    <div className='mt-4 lg:-mt-7 lg:ml-24'>
+    <div className='mt-12 lg:-mt-7 lg:ml-24'>
+
       <MeetInfo meetingTime={"17:00"} meetingStatus={"Now"} meetingTitle={"whatbuild design intern"}/>
       <MeetInfo meetingTime={"17:30"} meetingStatus={"Later"} meetingTitle={"Fiing <> Whatbuilds"}/>
       <MeetInfo meetingTime={"20:00"} meetingStatus={"Later"} meetingTitle={"nene connor atul"}/>

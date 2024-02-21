@@ -63,7 +63,7 @@ const HeroLeft = () => {
                 </div>
 
                 <button
-                className="ml-4 disabled:text-[#7d7d7d]  cursor-pointer disabled:cursor-not-allowed hover:bg-gray-100 text-blue-500 py-2 px-4 rounded-sm disabled:text-opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                className="w-[100px] text-left lg:text-center md:ml-4 disabled:text-[#7d7d7d]  cursor-pointer disabled:cursor-not-allowed hover:bg-gray-100 text-blue-500 py-2 px-4 rounded-sm disabled:text-opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                 disabled={!isEnabled} // Initially disabled
                 id="joinButton"
                 onClick={handleModal}
@@ -74,7 +74,7 @@ const HeroLeft = () => {
 
       <hr/>
 
-      <div className='text-center md:text-left mt-4'>
+      <div className='text-center md:text-left mt-1 lg:mt-4'>
         <span className='text-[#2B87FF] hover:underline cursor-pointer'>Learn more</span>  about Google Meet
       </div>
 
