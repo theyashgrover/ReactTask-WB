@@ -38,10 +38,10 @@ const HeroLeft = () => {
         Connect, collaborate and celebrate from anywhere with Google Meet
       </div>
         {/* CTA's */}
-      <div className='mt-14 flex flex-col md:flex md:flex-row mb-6'>
+      <div className='mt-6 lg:mt-14 flex flex-col md:flex md:flex-row mb-6'>
 
             <button 
-            className='text-center flex items-center mr-2 bg-[#2B87FF] font-semibold hover:bg-[#4279c0] text-white rounded-md px-3 py-2'
+            className='text-center w-[160px] flex items-center mr-2 bg-[#2B87FF] font-semibold hover:bg-[#4279c0] text-white rounded-md px-3 py-2'
             onClick={handleModal}
             >
                 <span>
@@ -50,27 +50,27 @@ const HeroLeft = () => {
                 New meeting
             </button>
 
-            <div className='mt-2 md:mt-0 md:ml-4 flex rounded-md border-2 border-[#8d8d8d] py-2 px-3 items-center justify-evenly'>
-            <span><img className='opacity-70 w-7 h-7' src={keyboardIcon} alt='Keyboard Icon'/></span>
-            <input 
-            ref={inputRef} 
-            onChange={handleInputChange}
-            onFocus={handleFocus} 
-            className='ml-3 appearance-none bg-transparent focus:border-0 border-none  outline-none' 
-            type='text' 
-            placeholder='Enter a code or nickname' 
-            id="meetlink"/> 
-            </div>
+            <div className='text-left w-[250px] mt-2 md:mt-0 md:ml-4 flex rounded-md border-2 border-[#8d8d8d] py-2 px-3 items-center justify-evenly'>
+                <span><img className='opacity-70 w-7 h-7' src={keyboardIcon} alt='Keyboard Icon'/></span>
+                <input 
+                ref={inputRef} 
+                onChange={handleInputChange}
+                onFocus={handleFocus} 
+                className='ml-3 appearance-none bg-transparent focus:border-0 border-none  outline-none' 
+                type='text' 
+                placeholder='Enter a code or nickname' 
+                id="meetlink"/> 
+                </div>
 
-            <button
-            className="ml-4 disabled:text-[#7d7d7d]  cursor-pointer disabled:cursor-not-allowed  hover:bg-gray-100 text-blue-500 py-2 px-4 rounded-sm disabled:text-opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            disabled={!isEnabled} // Initially disabled
-            id="joinButton"
-            onClick={handleModal}
-            >
-                Join
-            </button>
-      </div>
+                <button
+                className="ml-4 disabled:text-[#7d7d7d]  cursor-pointer disabled:cursor-not-allowed hover:bg-gray-100 text-blue-500 py-2 px-4 rounded-sm disabled:text-opacity-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                disabled={!isEnabled} // Initially disabled
+                id="joinButton"
+                onClick={handleModal}
+                >
+                    Join
+                </button>
+            </div>
 
       <hr/>
 
